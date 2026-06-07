@@ -1,5 +1,3 @@
-import './style.css';
-
 class LiteYouTube extends HTMLElement {
   connectedCallback() {
     const videoId = this.getAttribute('videoid');
