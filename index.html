@@ -14,10 +14,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_PT" />
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
     <header class="site-header" id="topo">
       <a class="brand" href="#topo" aria-label="Plano B Música">
         <img src="/assets/plano-b-logo-512.png" alt="Plano B" />
@@ -32,39 +36,45 @@
       <a class="header-cta" href="#contacto">Pedir orçamento</a>
     </header>
 
-    <main>
+    <main id="conteudo">
       <section class="hero section-shell">
         <div class="hero-copy reveal">
           <p class="eyebrow">Música ao vivo para casamentos · Portugal</p>
-          <h1>O som certo para tornar a cerimónia ainda mais especial.</h1>
+          <h1>Uma banda sonora ao vivo para o dia que fica para sempre.</h1>
           <p class="lead">
-            O Plano B acompanha cerimónias, receções aos convidados e momentos acústicos com música ao vivo — com a calma, emoção e proximidade que o vosso dia merece.
+            O Plano B acompanha cerimónias, receções aos convidados e momentos acústicos com duas guitarras, violino e voz — com emoção, proximidade e repertório escolhido convosco.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions" aria-label="Ações principais">
             <a class="button primary" href="#contacto">Pedir orçamento</a>
-            <a class="button secondary" href="https://www.youtube.com/channel/UCMbZ9ClaJQPNj6UjuNpFZSA" target="_blank" rel="noreferrer">Ver vídeos</a>
+            <a class="button secondary" href="#videos">Ouvir o grupo</a>
           </div>
-          <div class="quick-points" aria-label="Destaques">
-            <span>4 músicos</span>
-            <span>2 guitarras</span>
-            <span>Violino</span>
-            <span>Voz</span>
-          </div>
+          <dl class="hero-stats" aria-label="Resumo do serviço">
+            <div><dt>4</dt><dd>músicos</dd></div>
+            <div><dt>3</dt><dd>momentos do dia</dd></div>
+            <div><dt>100%</dt><dd>música ao vivo</dd></div>
+          </dl>
         </div>
-        <div class="hero-card reveal delay-1" aria-label="Plano B Música">
-          <div class="logo-orb">
-            <img src="/assets/plano-b-logo-512.png" alt="Logótipo Plano B" />
+
+        <div class="hero-showcase reveal delay-1" aria-label="Plano B Música ao vivo">
+          <img src="/assets/plano-b-band-hero.webp" alt="Os quatro elementos do Plano B" />
+          <div class="showcase-overlay">
+            <span class="live-pill">Ao vivo</span>
+            <p>cerimónia · receção · acústico pop/rock</p>
           </div>
           <div class="sound-lines" aria-hidden="true">
             <span></span><span></span><span></span><span></span>
           </div>
-          <p>cerimónias · boda · acústico pop/rock</p>
         </div>
+      </section>
+
+      <section class="proof-strip section-shell reveal" aria-label="Destaques">
+        <p>Ideal para cerimónias religiosas ou civis, cocktail de receção e momentos especiais da boda.</p>
+        <a href="https://www.instagram.com/planob.musica/" target="_blank" rel="noreferrer">Ver Instagram</a>
       </section>
 
       <section class="intro-band section-shell" id="sobre">
         <div class="image-frame reveal">
-          <img src="/assets/plano-b-band-hero.webp" alt="Os quatro elementos do Plano B" />
+          <img src="/assets/plano-b-band-card.webp" alt="Plano B durante uma atuação" loading="lazy" />
         </div>
         <div class="text-block reveal delay-1">
           <p class="eyebrow">Amigos na música e na vida real</p>
@@ -82,6 +92,7 @@
         <div class="section-heading reveal">
           <p class="eyebrow">O que fazemos</p>
           <h2>Música ao vivo nos momentos que ficam na memória.</h2>
+          <p>Uma presença musical discreta quando a emoção pede espaço, e mais envolvente quando a celebração começa a ganhar ritmo.</p>
         </div>
         <div class="cards section-shell">
           <article class="service-card reveal">
@@ -122,7 +133,7 @@
         <div class="section-heading reveal">
           <p class="eyebrow">Ouvir antes de decidir</p>
           <h2>Vídeos do Plano B</h2>
-          <p>Alguns registos do canal de YouTube. Mais vídeos podem ser adicionados quando quiserem.</p>
+          <p>Veja alguns registos do grupo e imagine estes arranjos ao vivo no vosso dia.</p>
         </div>
         <div class="video-grid section-shell">
           <lite-youtube videoid="WOBj4EP-WuE" videotitle="Plano B Música no YouTube"></lite-youtube>
@@ -148,7 +159,7 @@
           </p>
           <div class="contact-links">
             <a href="mailto:Info@Planobmusica.pt">Info@Planobmusica.pt</a>
-            <span>WhatsApp em breve</span>
+            <span>Resposta por email com disponibilidade e orçamento.</span>
           </div>
         </div>
         <form class="contact-form reveal delay-1" id="budgetForm">
